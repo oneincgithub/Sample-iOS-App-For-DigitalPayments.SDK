@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08E6D45D23338890236D157CAC739F88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		0B10853DDF7154067B8E6A5183B1DAC8 /* MakePaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4E7392DCA55993095F1BF67BD086FB /* MakePaymentRequest.swift */; };
+		0D85EABF897E4CB84BCF27F0F6EFC3AC /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D31B0226A468048E93ED753657B026 /* DateFormatter.swift */; };
+		1BBBF634312FF59496DA29CA376AE5B5 /* BaseContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5D080EE086A0EEDD4BBF6ACB72D26 /* BaseContext.swift */; };
+		2FC77029708C30CE1E8999BFBE9660B5 /* CreditCardPaymentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEC44F18E4B3849AAC559FB4EBA8ED5 /* CreditCardPaymentInfo.swift */; };
+		367077D070EB42658BB0DA461661A54A /* EventTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACD230155249F59B4F5AFB6C36E2E6 /* EventTypes.swift */; };
+		374AFC8F5038A43E60F81830180AE97D /* FeeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4EDD1CABDCF9D59E8E6FBD3BCC2374 /* FeeContext.swift */; };
+		375FE1F434B28B83A585D9B216CC0DDE /* DigitalPaymentsSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6A0027E19078A3E1F72889C83DAA646 /* DigitalPaymentsSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E3BB31ED5A1951538472545493E0257 /* PaymentCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825A036A5A5FC5EA264238F19B32ADBB /* PaymentCategory.swift */; };
+		470044F65CE6C5C2CF3C1C4A5CDB33F3 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC12321569AABBE3BBC631F21ACE1D9 /* ErrorResponse.swift */; };
+		5262E2442C15222F4C0D82D5431A5587 /* URLComponentsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D47C67C2CC0E1685FBF0177CAA3E4CF /* URLComponentsExtension.swift */; };
+		56DE5830F10B3060ED23D6829F13D683 /* BankAccountPaymentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D3D598B4291FF7049B63772847ADB /* BankAccountPaymentInfo.swift */; };
+		747B398DE3C1C2702C358DFF28B4BDB4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B79217BEAF469214E926862C90D0E0 /* BaseViewController.swift */; };
+		791E2C9816F69FEE1F58241BF4A08DB5 /* SavePaymentMethodRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A33777A43C81A43BC90B8B2F625D7D4 /* SavePaymentMethodRequest.swift */; };
+		813029DBF5DA7B715E673900F490236E /* SavePaymentMethodResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1028A176461515200985BD982DB08E8 /* SavePaymentMethodResponse.swift */; };
+		854E54E06399632D646B8D7CA69DDB8A /* Pods-DigitalPaymentsSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 328CE7638EC3B5DE5E4C22362327781D /* Pods-DigitalPaymentsSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		888E47400F12D20FDE3BC94273C5CEC8 /* PaymentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7EDAD3B92BAE837CCE32B4444E005F /* PaymentInfo.swift */; };
+		8B6C67F1BB4ACCBC19D0AD0AA9E296C1 /* SaveOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9838886A13D00CC9334DB7943E0E5D24 /* SaveOption.swift */; };
+		8DAC7E85ADFD1B4149E8ACD214D0A513 /* AmountContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB5D92EB0DEE00D4247E5FDDC5A28CE /* AmountContext.swift */; };
+		8E633C99CCA923B8B33715D05A015865 /* MakePaymentContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEB09F2CA8E2E0DE5C6DE888C8C3A62 /* MakePaymentContext.swift */; };
+		91D8E3B76FC3D52DC9C15D756113168C /* DigitalPaymentsSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBE395B9D9D1F395CA5E63000BB5FB7 /* DigitalPaymentsSDK-dummy.m */; };
+		95FECA0F33B1A717DE9F40D8BC03898B /* DPMakePaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492AB2D977D1B9FA9E48A13F3C52BF0F /* DPMakePaymentViewController.swift */; };
+		A58F77F8F3B29B3C5A7481CD9C0F8BB5 /* SaveCreditCardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFDFA2641C32D99E416F431EA1E4B4 /* SaveCreditCardResponse.swift */; };
+		AA439A6BC7C9010AB1023CBB0C06D15F /* DPSavePaymentMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31AA6A77BF37C3C98E133FA8450428 /* DPSavePaymentMethodViewController.swift */; };
+		B1570D54A22EE974397D04EFD3F47D4E /* SaveBankAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A631E294E0375BAE8F9B9C37FFFC1142 /* SaveBankAccountResponse.swift */; };
+		B51553F3D9BC2CCFD5F6E59E789B29E2 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874ACA8D18FC5D818A286815E0B0F199 /* EventService.swift */; };
+		BAF2E43B1CD46A309E683F8E56EB7BCE /* DigitalPaymentsSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C9FD96E2F7A982CC4DBCA1782D648B /* DigitalPaymentsSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC5AF5CD836A2C54A85F5B1A9839AC4A /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6D419AB2672DBB723B38668A51854 /* BaseResponse.swift */; };
+		CBD0064C7430BD5AAD2160AFB21233FC /* Pods-DigitalPaymentsSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43662E7CB615337EA9D000DF6FF19B1D /* Pods-DigitalPaymentsSample-dummy.m */; };
+		EF7060FC8041E3692AD3FDFFE066BCD0 /* SavePaymentMethodContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA84F344A8791C1B70BD98D39CE9C86 /* SavePaymentMethodContext.swift */; };
+		F2A3318B9016B3A8177CFFA928E79BC8 /* BaseResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF7323A8AE5BBBFF8C36CA48BB429C /* BaseResponseExtension.swift */; };
+		FB0BCE292E270D7812F6BB86AA8844CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E17B39A344B5A858C1BC6AC3A4C508F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAA847AFA124250CBBB16415EAF91652;
+			remoteInfo = DigitalPaymentsSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C908218B9D0B74A7BED14D4B8EDBA31 /* Pods-DigitalPaymentsSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DigitalPaymentsSample.debug.xcconfig"; sourceTree = "<group>"; };
+		1D47C67C2CC0E1685FBF0177CAA3E4CF /* URLComponentsExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLComponentsExtension.swift; sourceTree = "<group>"; };
+		1F4EDD1CABDCF9D59E8E6FBD3BCC2374 /* FeeContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeeContext.swift; sourceTree = "<group>"; };
+		223DFA9CEA028E197B17C60288752DB3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		237D0019C5C3E3E7A0D3DF014E8C2CBB /* DigitalPaymentsSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DigitalPaymentsSDK.xcconfig; sourceTree = "<group>"; };
+		2AEC44F18E4B3849AAC559FB4EBA8ED5 /* CreditCardPaymentInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreditCardPaymentInfo.swift; sourceTree = "<group>"; };
+		2DC12321569AABBE3BBC631F21ACE1D9 /* ErrorResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		328CE7638EC3B5DE5E4C22362327781D /* Pods-DigitalPaymentsSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DigitalPaymentsSample-umbrella.h"; sourceTree = "<group>"; };
+		3B844438D75043335BD93D9C5F5389D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = DigitalPaymentsSDK/Info.plist; sourceTree = "<group>"; };
+		3C31AA6A77BF37C3C98E133FA8450428 /* DPSavePaymentMethodViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DPSavePaymentMethodViewController.swift; sourceTree = "<group>"; };
+		3CB5D92EB0DEE00D4247E5FDDC5A28CE /* AmountContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AmountContext.swift; sourceTree = "<group>"; };
+		3E4E7392DCA55993095F1BF67BD086FB /* MakePaymentRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MakePaymentRequest.swift; sourceTree = "<group>"; };
+		3F7EDAD3B92BAE837CCE32B4444E005F /* PaymentInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentInfo.swift; sourceTree = "<group>"; };
+		435C52DFAEF1159FCE5BE1824F7A8151 /* Pods-DigitalPaymentsSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DigitalPaymentsSample.modulemap"; sourceTree = "<group>"; };
+		43662E7CB615337EA9D000DF6FF19B1D /* Pods-DigitalPaymentsSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DigitalPaymentsSample-dummy.m"; sourceTree = "<group>"; };
+		46A6D419AB2672DBB723B38668A51854 /* BaseResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		492AB2D977D1B9FA9E48A13F3C52BF0F /* DPMakePaymentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DPMakePaymentViewController.swift; sourceTree = "<group>"; };
+		567D3D598B4291FF7049B63772847ADB /* BankAccountPaymentInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BankAccountPaymentInfo.swift; sourceTree = "<group>"; };
+		5B10686BB62E20ECDA30CB182F1A21A0 /* DigitalPaymentsSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = DigitalPaymentsSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5DEFDFA2641C32D99E416F431EA1E4B4 /* SaveCreditCardResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SaveCreditCardResponse.swift; sourceTree = "<group>"; };
+		66036DCA12DB0A1C1ABDA7E694C59B42 /* DigitalPaymentsSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DigitalPaymentsSDK.modulemap; sourceTree = "<group>"; };
+		6A7FE4594209F48BE18832A093BF07DC /* Pods-DigitalPaymentsSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DigitalPaymentsSample-frameworks.sh"; sourceTree = "<group>"; };
+		76CF7323A8AE5BBBFF8C36CA48BB429C /* BaseResponseExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseResponseExtension.swift; sourceTree = "<group>"; };
+		7EA84F344A8791C1B70BD98D39CE9C86 /* SavePaymentMethodContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SavePaymentMethodContext.swift; sourceTree = "<group>"; };
+		811B97B90119254AAF3D5D0EABA5AE9B /* Pods-DigitalPaymentsSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DigitalPaymentsSample-acknowledgements.plist"; sourceTree = "<group>"; };
+		825A036A5A5FC5EA264238F19B32ADBB /* PaymentCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentCategory.swift; sourceTree = "<group>"; };
+		85B79217BEAF469214E926862C90D0E0 /* BaseViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		874ACA8D18FC5D818A286815E0B0F199 /* EventService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
+		8A33777A43C81A43BC90B8B2F625D7D4 /* SavePaymentMethodRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SavePaymentMethodRequest.swift; sourceTree = "<group>"; };
+		91ACD230155249F59B4F5AFB6C36E2E6 /* EventTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EventTypes.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9838886A13D00CC9334DB7943E0E5D24 /* SaveOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SaveOption.swift; sourceTree = "<group>"; };
+		A02154C7219161B9ED9E3FE8617C06F6 /* DigitalPaymentsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DigitalPaymentsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1028A176461515200985BD982DB08E8 /* SavePaymentMethodResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SavePaymentMethodResponse.swift; sourceTree = "<group>"; };
+		A471AACD2EC685EC2A0FD87B629D2577 /* Pods-DigitalPaymentsSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DigitalPaymentsSample-resources.sh"; sourceTree = "<group>"; };
+		A631E294E0375BAE8F9B9C37FFFC1142 /* SaveBankAccountResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SaveBankAccountResponse.swift; sourceTree = "<group>"; };
+		A7A44B264E5DFBB42CE6048571116BDD /* DigitalPaymentsSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DigitalPaymentsSDK-prefix.pch"; sourceTree = "<group>"; };
+		ADC5D080EE086A0EEDD4BBF6ACB72D26 /* BaseContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseContext.swift; sourceTree = "<group>"; };
+		B6A0027E19078A3E1F72889C83DAA646 /* DigitalPaymentsSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DigitalPaymentsSDK-umbrella.h"; sourceTree = "<group>"; };
+		BB383A24E0635267EA5CBE2B16961A95 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C361BED5790FCE8C1204AF16FF868511 /* Pods-DigitalPaymentsSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DigitalPaymentsSample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D4C9FD96E2F7A982CC4DBCA1782D648B /* DigitalPaymentsSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DigitalPaymentsSDK.h; path = DigitalPaymentsSDK/DigitalPaymentsSDK.h; sourceTree = "<group>"; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D91082D363E0B6BD2F6B2BF3899C07CC /* Pods-DigitalPaymentsSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DigitalPaymentsSample.release.xcconfig"; sourceTree = "<group>"; };
+		DCBE395B9D9D1F395CA5E63000BB5FB7 /* DigitalPaymentsSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DigitalPaymentsSDK-dummy.m"; sourceTree = "<group>"; };
+		EDEB09F2CA8E2E0DE5C6DE888C8C3A62 /* MakePaymentContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MakePaymentContext.swift; sourceTree = "<group>"; };
+		F4D31B0226A468048E93ED753657B026 /* DateFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		F537F2B61B3D9FABEBEC2A6A7252E57C /* Pods_DigitalPaymentsSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigitalPaymentsSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23654E69A2F76EBD0562B5AB4B6B88ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E6D45D23338890236D157CAC739F88 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA7EF7EB67E8BFF68F39F4A8196FCA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0BCE292E270D7812F6BB86AA8844CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		170C5FD90216FAE3FBEAA08DACE9B11B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4077E3AF4EA048D6EA5C1CC0F5CBC305 /* DigitalPaymentsSDK */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		27DD30781996539ED2B30C0BDF1F3EF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A02154C7219161B9ED9E3FE8617C06F6 /* DigitalPaymentsSDK.framework */,
+				F537F2B61B3D9FABEBEC2A6A7252E57C /* Pods_DigitalPaymentsSample.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4077E3AF4EA048D6EA5C1CC0F5CBC305 /* DigitalPaymentsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D4C9FD96E2F7A982CC4DBCA1782D648B /* DigitalPaymentsSDK.h */,
+				3B844438D75043335BD93D9C5F5389D4 /* Info.plist */,
+				738008BA780720687D2308C6145D176F /* Context */,
+				BC207F2633A443D220D3CF7778A5CAD9 /* Core */,
+				A481CFFD961DF461F3559CCD59FD0D67 /* Models */,
+				8789B9ED90CD7B4EC3C6524A1A1D7047 /* Pod */,
+				70895CE08652AAF5DF0BE18D11E0DC56 /* Services */,
+				4FE10DB260DA4A175ACA36EFA3A7C351 /* Support Files */,
+				75CC7AE15736FAA2EF72473BACEC923B /* ViewControllers */,
+			);
+			name = DigitalPaymentsSDK;
+			path = ../../DigitalPaymentsSDK;
+			sourceTree = "<group>";
+		};
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4FE10DB260DA4A175ACA36EFA3A7C351 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				66036DCA12DB0A1C1ABDA7E694C59B42 /* DigitalPaymentsSDK.modulemap */,
+				237D0019C5C3E3E7A0D3DF014E8C2CBB /* DigitalPaymentsSDK.xcconfig */,
+				DCBE395B9D9D1F395CA5E63000BB5FB7 /* DigitalPaymentsSDK-dummy.m */,
+				A7A44B264E5DFBB42CE6048571116BDD /* DigitalPaymentsSDK-prefix.pch */,
+				B6A0027E19078A3E1F72889C83DAA646 /* DigitalPaymentsSDK-umbrella.h */,
+				BB383A24E0635267EA5CBE2B16961A95 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../DigitalPaymentsSample/Pods/Target Support Files/DigitalPaymentsSDK";
+			sourceTree = "<group>";
+		};
+		6D0AA86266AB0B7CF226CB06A59117E6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				73399756BB5BC80DA7DC3F5A68FCB83D /* Pods-DigitalPaymentsSample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		70895CE08652AAF5DF0BE18D11E0DC56 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				874ACA8D18FC5D818A286815E0B0F199 /* EventService.swift */,
+				91ACD230155249F59B4F5AFB6C36E2E6 /* EventTypes.swift */,
+			);
+			name = Services;
+			path = DigitalPaymentsSDK/Services;
+			sourceTree = "<group>";
+		};
+		73399756BB5BC80DA7DC3F5A68FCB83D /* Pods-DigitalPaymentsSample */ = {
+			isa = PBXGroup;
+			children = (
+				223DFA9CEA028E197B17C60288752DB3 /* Info.plist */,
+				435C52DFAEF1159FCE5BE1824F7A8151 /* Pods-DigitalPaymentsSample.modulemap */,
+				C361BED5790FCE8C1204AF16FF868511 /* Pods-DigitalPaymentsSample-acknowledgements.markdown */,
+				811B97B90119254AAF3D5D0EABA5AE9B /* Pods-DigitalPaymentsSample-acknowledgements.plist */,
+				43662E7CB615337EA9D000DF6FF19B1D /* Pods-DigitalPaymentsSample-dummy.m */,
+				6A7FE4594209F48BE18832A093BF07DC /* Pods-DigitalPaymentsSample-frameworks.sh */,
+				A471AACD2EC685EC2A0FD87B629D2577 /* Pods-DigitalPaymentsSample-resources.sh */,
+				328CE7638EC3B5DE5E4C22362327781D /* Pods-DigitalPaymentsSample-umbrella.h */,
+				0C908218B9D0B74A7BED14D4B8EDBA31 /* Pods-DigitalPaymentsSample.debug.xcconfig */,
+				D91082D363E0B6BD2F6B2BF3899C07CC /* Pods-DigitalPaymentsSample.release.xcconfig */,
+			);
+			name = "Pods-DigitalPaymentsSample";
+			path = "Target Support Files/Pods-DigitalPaymentsSample";
+			sourceTree = "<group>";
+		};
+		738008BA780720687D2308C6145D176F /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5D080EE086A0EEDD4BBF6ACB72D26 /* BaseContext.swift */,
+				EDEB09F2CA8E2E0DE5C6DE888C8C3A62 /* MakePaymentContext.swift */,
+				7EA84F344A8791C1B70BD98D39CE9C86 /* SavePaymentMethodContext.swift */,
+			);
+			name = Context;
+			path = DigitalPaymentsSDK/Context;
+			sourceTree = "<group>";
+		};
+		75CC7AE15736FAA2EF72473BACEC923B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				85B79217BEAF469214E926862C90D0E0 /* BaseViewController.swift */,
+				492AB2D977D1B9FA9E48A13F3C52BF0F /* DPMakePaymentViewController.swift */,
+				3C31AA6A77BF37C3C98E133FA8450428 /* DPSavePaymentMethodViewController.swift */,
+			);
+			name = ViewControllers;
+			path = DigitalPaymentsSDK/ViewControllers;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				170C5FD90216FAE3FBEAA08DACE9B11B /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				27DD30781996539ED2B30C0BDF1F3EF7 /* Products */,
+				6D0AA86266AB0B7CF226CB06A59117E6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		81C02C642BC60B805E3B87D4CA1E012C /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				3CB5D92EB0DEE00D4247E5FDDC5A28CE /* AmountContext.swift */,
+				1F4EDD1CABDCF9D59E8E6FBD3BCC2374 /* FeeContext.swift */,
+				825A036A5A5FC5EA264238F19B32ADBB /* PaymentCategory.swift */,
+				9838886A13D00CC9334DB7943E0E5D24 /* SaveOption.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		8789B9ED90CD7B4EC3C6524A1A1D7047 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				5B10686BB62E20ECDA30CB182F1A21A0 /* DigitalPaymentsSDK.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		A481CFFD961DF461F3559CCD59FD0D67 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				567D3D598B4291FF7049B63772847ADB /* BankAccountPaymentInfo.swift */,
+				2AEC44F18E4B3849AAC559FB4EBA8ED5 /* CreditCardPaymentInfo.swift */,
+				2DC12321569AABBE3BBC631F21ACE1D9 /* ErrorResponse.swift */,
+				3E4E7392DCA55993095F1BF67BD086FB /* MakePaymentRequest.swift */,
+				3F7EDAD3B92BAE837CCE32B4444E005F /* PaymentInfo.swift */,
+				A631E294E0375BAE8F9B9C37FFFC1142 /* SaveBankAccountResponse.swift */,
+				5DEFDFA2641C32D99E416F431EA1E4B4 /* SaveCreditCardResponse.swift */,
+				8A33777A43C81A43BC90B8B2F625D7D4 /* SavePaymentMethodRequest.swift */,
+				A1028A176461515200985BD982DB08E8 /* SavePaymentMethodResponse.swift */,
+				81C02C642BC60B805E3B87D4CA1E012C /* Enums */,
+			);
+			name = Models;
+			path = DigitalPaymentsSDK/Models;
+			sourceTree = "<group>";
+		};
+		BC207F2633A443D220D3CF7778A5CAD9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				46A6D419AB2672DBB723B38668A51854 /* BaseResponse.swift */,
+				76CF7323A8AE5BBBFF8C36CA48BB429C /* BaseResponseExtension.swift */,
+				F4D31B0226A468048E93ED753657B026 /* DateFormatter.swift */,
+				1D47C67C2CC0E1685FBF0177CAA3E4CF /* URLComponentsExtension.swift */,
+			);
+			name = Core;
+			path = DigitalPaymentsSDK/Core;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D5347904CF754D6785B84253F2574A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5A3B41E00AA7CA208804A26914C23705 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854E54E06399632D646B8D7CA69DDB8A /* Pods-DigitalPaymentsSample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB749C8BADD6BAAEB6CA209BDF27BF57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				375FE1F434B28B83A585D9B216CC0DDE /* DigitalPaymentsSDK-umbrella.h in Headers */,
+				BAF2E43B1CD46A309E683F8E56EB7BCE /* DigitalPaymentsSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		417429DC8785FB813B26541BC6FBD1E5 /* Pods-DigitalPaymentsSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C9370C528062E03A6C3F06DBF875FB7 /* Build configuration list for PBXNativeTarget "Pods-DigitalPaymentsSample" */;
+			buildPhases = (
+				5A3B41E00AA7CA208804A26914C23705 /* Headers */,
+				85EE538124E859502762ED334B322B88 /* Sources */,
+				23654E69A2F76EBD0562B5AB4B6B88ED /* Frameworks */,
+				9903CF9ED6D4D395CC20F67DE1B2B05F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				945F067490C7F3E7E384F8CF3FECD130 /* PBXTargetDependency */,
+			);
+			name = "Pods-DigitalPaymentsSample";
+			productName = "Pods-DigitalPaymentsSample";
+			productReference = F537F2B61B3D9FABEBEC2A6A7252E57C /* Pods_DigitalPaymentsSample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BAA847AFA124250CBBB16415EAF91652 /* DigitalPaymentsSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C2676C82D63C310745DD1FA8D29C981 /* Build configuration list for PBXNativeTarget "DigitalPaymentsSDK" */;
+			buildPhases = (
+				AB749C8BADD6BAAEB6CA209BDF27BF57 /* Headers */,
+				68FD128CE1365F7570E2E1C09A1C584C /* Sources */,
+				9FA7EF7EB67E8BFF68F39F4A8196FCA7 /* Frameworks */,
+				FDC8DEE15CF9D285C65B74DBBD17401E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigitalPaymentsSDK;
+			productName = DigitalPaymentsSDK;
+			productReference = A02154C7219161B9ED9E3FE8617C06F6 /* DigitalPaymentsSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 27DD30781996539ED2B30C0BDF1F3EF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAA847AFA124250CBBB16415EAF91652 /* DigitalPaymentsSDK */,
+				417429DC8785FB813B26541BC6FBD1E5 /* Pods-DigitalPaymentsSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9903CF9ED6D4D395CC20F67DE1B2B05F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDC8DEE15CF9D285C65B74DBBD17401E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68FD128CE1365F7570E2E1C09A1C584C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DAC7E85ADFD1B4149E8ACD214D0A513 /* AmountContext.swift in Sources */,
+				56DE5830F10B3060ED23D6829F13D683 /* BankAccountPaymentInfo.swift in Sources */,
+				1BBBF634312FF59496DA29CA376AE5B5 /* BaseContext.swift in Sources */,
+				BC5AF5CD836A2C54A85F5B1A9839AC4A /* BaseResponse.swift in Sources */,
+				F2A3318B9016B3A8177CFFA928E79BC8 /* BaseResponseExtension.swift in Sources */,
+				747B398DE3C1C2702C358DFF28B4BDB4 /* BaseViewController.swift in Sources */,
+				2FC77029708C30CE1E8999BFBE9660B5 /* CreditCardPaymentInfo.swift in Sources */,
+				0D85EABF897E4CB84BCF27F0F6EFC3AC /* DateFormatter.swift in Sources */,
+				91D8E3B76FC3D52DC9C15D756113168C /* DigitalPaymentsSDK-dummy.m in Sources */,
+				95FECA0F33B1A717DE9F40D8BC03898B /* DPMakePaymentViewController.swift in Sources */,
+				AA439A6BC7C9010AB1023CBB0C06D15F /* DPSavePaymentMethodViewController.swift in Sources */,
+				470044F65CE6C5C2CF3C1C4A5CDB33F3 /* ErrorResponse.swift in Sources */,
+				B51553F3D9BC2CCFD5F6E59E789B29E2 /* EventService.swift in Sources */,
+				367077D070EB42658BB0DA461661A54A /* EventTypes.swift in Sources */,
+				374AFC8F5038A43E60F81830180AE97D /* FeeContext.swift in Sources */,
+				8E633C99CCA923B8B33715D05A015865 /* MakePaymentContext.swift in Sources */,
+				0B10853DDF7154067B8E6A5183B1DAC8 /* MakePaymentRequest.swift in Sources */,
+				3E3BB31ED5A1951538472545493E0257 /* PaymentCategory.swift in Sources */,
+				888E47400F12D20FDE3BC94273C5CEC8 /* PaymentInfo.swift in Sources */,
+				B1570D54A22EE974397D04EFD3F47D4E /* SaveBankAccountResponse.swift in Sources */,
+				A58F77F8F3B29B3C5A7481CD9C0F8BB5 /* SaveCreditCardResponse.swift in Sources */,
+				8B6C67F1BB4ACCBC19D0AD0AA9E296C1 /* SaveOption.swift in Sources */,
+				EF7060FC8041E3692AD3FDFFE066BCD0 /* SavePaymentMethodContext.swift in Sources */,
+				791E2C9816F69FEE1F58241BF4A08DB5 /* SavePaymentMethodRequest.swift in Sources */,
+				813029DBF5DA7B715E673900F490236E /* SavePaymentMethodResponse.swift in Sources */,
+				5262E2442C15222F4C0D82D5431A5587 /* URLComponentsExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85EE538124E859502762ED334B322B88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBD0064C7430BD5AAD2160AFB21233FC /* Pods-DigitalPaymentsSample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		945F067490C7F3E7E384F8CF3FECD130 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DigitalPaymentsSDK;
+			target = BAA847AFA124250CBBB16415EAF91652 /* DigitalPaymentsSDK */;
+			targetProxy = E17B39A344B5A858C1BC6AC3A4C508F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08B0394D5F17A9F046DC0719C25BA452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		12D4302CD6891F5ADC0221D578741A15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 237D0019C5C3E3E7A0D3DF014E8C2CBB /* DigitalPaymentsSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DigitalPaymentsSDK/DigitalPaymentsSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DigitalPaymentsSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DigitalPaymentsSDK/DigitalPaymentsSDK.modulemap";
+				PRODUCT_MODULE_NAME = DigitalPaymentsSDK;
+				PRODUCT_NAME = DigitalPaymentsSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9BAB345F91A3F0C2DFF340C14B5025D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C908218B9D0B74A7BED14D4B8EDBA31 /* Pods-DigitalPaymentsSample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DigitalPaymentsSample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DigitalPaymentsSample/Pods-DigitalPaymentsSample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C12D93813B9462C351CC1A6C8EAF2FC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 237D0019C5C3E3E7A0D3DF014E8C2CBB /* DigitalPaymentsSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DigitalPaymentsSDK/DigitalPaymentsSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DigitalPaymentsSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DigitalPaymentsSDK/DigitalPaymentsSDK.modulemap";
+				PRODUCT_MODULE_NAME = DigitalPaymentsSDK;
+				PRODUCT_NAME = DigitalPaymentsSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DEAE86D038C242A7F55AB680E6001606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D91082D363E0B6BD2F6B2BF3899C07CC /* Pods-DigitalPaymentsSample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DigitalPaymentsSample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DigitalPaymentsSample/Pods-DigitalPaymentsSample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E82C56363775B4EF468FF2AD9A2F5414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C2676C82D63C310745DD1FA8D29C981 /* Build configuration list for PBXNativeTarget "DigitalPaymentsSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12D4302CD6891F5ADC0221D578741A15 /* Debug */,
+				C12D93813B9462C351CC1A6C8EAF2FC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C9370C528062E03A6C3F06DBF875FB7 /* Build configuration list for PBXNativeTarget "Pods-DigitalPaymentsSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BAB345F91A3F0C2DFF340C14B5025D5 /* Debug */,
+				DEAE86D038C242A7F55AB680E6001606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08B0394D5F17A9F046DC0719C25BA452 /* Debug */,
+				E82C56363775B4EF468FF2AD9A2F5414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

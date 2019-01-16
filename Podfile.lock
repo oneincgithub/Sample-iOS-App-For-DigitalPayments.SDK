@@ -1,0 +1,16 @@
+PODS:
+  - DigitalPaymentsSDK (1.0.0)
+
+DEPENDENCIES:
+  - DigitalPaymentsSDK (from `../DigitalPaymentsSDK`)
+
+EXTERNAL SOURCES:
+  DigitalPaymentsSDK:
+    :path: "../DigitalPaymentsSDK"
+
+SPEC CHECKSUMS:
+  DigitalPaymentsSDK: 0046ee51674ebea959a3c09bec6068c2bb1fc956
+
+PODFILE CHECKSUM: d7993f8634c3bbae1a100b27e8e03d84e6351a92
+
+COCOAPODS: 1.5.3
