@@ -1,0 +1,11 @@
+framework module DigitalPaymentsSDK {
+  umbrella header "DigitalPaymentsSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module DigitalPaymentsSDK.Swift {
+    header "DigitalPaymentsSDK-Swift.h"
+    requires objc
+}
