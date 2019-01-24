@@ -5,4 +5,4 @@ Used programming language - Swift.
 
 ## Installing
 
-Information about installing DigitalPaymentsSDK library look at [documentation](https://testportalone.processonepayments.com/Help/Documentation/ios-sdk) 
+Information about installing DigitalPaymentsSDK library look at [documentation](https://developers.processonepayments.com/Help/Documentation/ios-sdk) 
