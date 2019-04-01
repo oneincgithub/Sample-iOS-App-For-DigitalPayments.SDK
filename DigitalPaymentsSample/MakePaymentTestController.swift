@@ -1,7 +1,9 @@
 import UIKit
 import DigitalPaymentsSDK
 
-class MakePaymentTestController : BaseTestController {    
+class MakePaymentTestController : BaseTestController {
+    
+    var digitalPaymentForm: DigitalPaymentForm! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()      
@@ -23,13 +25,21 @@ class MakePaymentTestController : BaseTestController {
             clientReferenceData1: clientReferenceData1.text
         )
 
-        DPMakePaymentViewController
+        digitalPaymentForm = DPMakePaymentViewController
             .initialize(sessionKey: sessionKey!, url: genericModalUrl)
             .makePayment(request: request)
-            .onPaymentComplete(do: {(response: PaymentInfo) -> Void in print("Make payment controller: onPaymentComplete \(response.toJSONString())")})
+            .onLoad(do: {print("Make payment controller: onLoad")})
+            .onPaymentComplete(do: {(response: PaymentInfo) -> Void in print("Make payment controller: onPaymentComplete \(response) \(response.toJSONString())")})
             .onPaymentCanceled(do: {print("Make payment controller: onPaymentCanceled")})
-            .onError(do: {(error: ErrorResponse) -> Void in print("Make payment controller: onError \(error.toJSONString())")})
+            .onError(do: {(error: ErrorResponse) -> Void in self.onErrorMessage(response: error) })
             .onClose(do: {print("Make payment controller: onClose")})
             .startWebView(hostViewController: self)
+    }
+    
+    private func onErrorMessage(response: ErrorResponse){
+        print("Make payment controller: onError \(response.toJSONString())")
+        if (response.description?.contains("InternalServerError") ?? false) {
+            digitalPaymentForm.close()
+        }
     }
 }

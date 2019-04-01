@@ -1,22 +1,22 @@
 PODS:
-  - DigitalPaymentsSDK (1.0.4)
+  - DigitalPaymentsSDK (1.0.5)
 
 DEPENDENCIES:
-  - DigitalPaymentsSDK (from `https://github.com/oneincgithub/DigitalPayments.SDK-for-iOS.git`, tag `1.0.4`)
+  - DigitalPaymentsSDK (from `https://github.com/oneincgithub/DigitalPayments.SDK-for-iOS.git`, tag `1.0.5`)
 
 EXTERNAL SOURCES:
   DigitalPaymentsSDK:
     :git: https://github.com/oneincgithub/DigitalPayments.SDK-for-iOS.git
-    :tag: 1.0.4
+    :tag: 1.0.5
 
 CHECKOUT OPTIONS:
   DigitalPaymentsSDK:
     :git: https://github.com/oneincgithub/DigitalPayments.SDK-for-iOS.git
-    :tag: 1.0.4
+    :tag: 1.0.5
 
 SPEC CHECKSUMS:
-  DigitalPaymentsSDK: a70987bf93f5fe0c03bcde044021e17bb86083b6
+  DigitalPaymentsSDK: 1f97a0e80d507f5814660719b4e248d80bd43d93
 
-PODFILE CHECKSUM: 1accb35e011a4d0b3769206acfbb8c3e9a17261d
+PODFILE CHECKSUM: f465d83bc7f91859bae88385aabb2ebf436f6daf
 
 COCOAPODS: 1.5.3

@@ -4,7 +4,7 @@ target 'DigitalPaymentsSample' do
 
   use_frameworks!
 
-  pod 'DigitalPaymentsSDK', :git => 'https://github.com/oneincgithub/DigitalPayments.SDK-for-iOS.git', :tag => '1.0.4'
+  pod 'DigitalPaymentsSDK', :git => 'https://github.com/oneincgithub/DigitalPayments.SDK-for-iOS.git', :tag => '1.0.5'
   
 end
 
