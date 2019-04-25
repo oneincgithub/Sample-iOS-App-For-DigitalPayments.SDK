@@ -1,6 +1,0 @@
-framework module DigitalPaymentsSDK {
-  umbrella header "DigitalPaymentsSDK-umbrella.h"
-
-  export *
-  module * { export * }
-}

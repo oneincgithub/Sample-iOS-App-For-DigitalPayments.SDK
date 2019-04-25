@@ -4,7 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-DigitalPaymentsSample.xcscheme</key>
+		<key>DigitalPayments.PaymentForm.SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-DigitalPayments.PaymentForm.Sample.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

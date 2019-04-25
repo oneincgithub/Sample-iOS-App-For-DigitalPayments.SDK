@@ -1,0 +1,6 @@
+framework module Pods_DigitalPayments_PaymentForm_Sample {
+  umbrella header "Pods-DigitalPayments.PaymentForm.Sample-umbrella.h"
+
+  export *
+  module * { export * }
+}

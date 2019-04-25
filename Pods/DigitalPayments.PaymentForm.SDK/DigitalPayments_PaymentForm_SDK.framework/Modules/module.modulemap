@@ -1,0 +1,4 @@
+framework module DigitalPayments_PaymentForm_SDK {
+  header "DigitalPayments_PaymentForm_SDK-Swift.h"
+  requires objc
+}

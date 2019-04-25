@@ -1,6 +1,0 @@
-framework module Pods_DigitalPaymentsSample {
-  umbrella header "Pods-DigitalPaymentsSample-umbrella.h"
-
-  export *
-  module * { export * }
-}
