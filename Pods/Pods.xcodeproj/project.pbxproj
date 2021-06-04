@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		CE7439095D159D91D951BB378D0C4C2A /* DigitalPayments.PaymentForm.SDK */ = {
+		EBF720841053E79D52AA9E8D86F13B60 /* DigitalPayments.PaymentForm.SDK */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = A005C533BF7250ABFB2CB883C0550201 /* Build configuration list for PBXAggregateTarget "DigitalPayments.PaymentForm.SDK" */;
 			buildPhases = (
@@ -19,113 +19,124 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		3CD0DA9256E96CF6188F67FCB5D88CD8 /* Pods-DigitalPayments.PaymentForm.Sample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8089B2DF11D7965F9EAD34E0ABADA09 /* Pods-DigitalPayments.PaymentForm.Sample-dummy.m */; };
-		49740BEC6B821160343271818D788D26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		97EA7A2609B708091D5BD31B30E0317F /* Pods-DigitalPayments.PaymentForm.Sample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C9EF3EBC951A8971502B456E0029C6 /* Pods-DigitalPayments.PaymentForm.Sample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07FBD47FBD2C13334F460BCCFF90E5E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4745DA9FAFD889E49B3956A713090E1F /* Pods-DigitalPayments.PaymentForm.Sample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7C592B3113BE446C6BB798F042F62 /* Pods-DigitalPayments.PaymentForm.Sample-dummy.m */; };
+		988911942FA6E5EC7B51D98E3BCD1497 /* Pods-DigitalPayments.PaymentForm.Sample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41F13E795AB0209A24D505283B17A121 /* Pods-DigitalPayments.PaymentForm.Sample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AEDCFF009F624FB93ECAC06385578AB3 /* PBXContainerItemProxy */ = {
+		486D13507D03012C97AC943E33CEA067 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CE7439095D159D91D951BB378D0C4C2A;
+			remoteGlobalIDString = EBF720841053E79D52AA9E8D86F13B60;
 			remoteInfo = DigitalPayments.PaymentForm.SDK;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		42D90DC0790D37EE443F42520F53ED9C /* Pods-DigitalPayments.PaymentForm.Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DigitalPayments.PaymentForm.Sample.release.xcconfig"; sourceTree = "<group>"; };
-		50C9EF3EBC951A8971502B456E0029C6 /* Pods-DigitalPayments.PaymentForm.Sample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DigitalPayments.PaymentForm.Sample-umbrella.h"; sourceTree = "<group>"; };
-		54E864B01444188686515CA170E5C57B /* Pods-DigitalPayments.PaymentForm.Sample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DigitalPayments.PaymentForm.Sample-Info.plist"; sourceTree = "<group>"; };
-		7C6631E1EC086F98EC66E1EC607A8635 /* Pods-DigitalPayments.PaymentForm.Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DigitalPayments.PaymentForm.Sample.debug.xcconfig"; sourceTree = "<group>"; };
-		8CF10F49EE554F67D9F0C5063BA12028 /* Pods-DigitalPayments.PaymentForm.Sample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DigitalPayments.PaymentForm.Sample.modulemap"; sourceTree = "<group>"; };
-		8FBD6EE9D5B43B761E41699A4AAB8656 /* DigitalPayments_PaymentForm_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitalPayments_PaymentForm_SDK.framework; sourceTree = "<group>"; };
-		978BCC29244F9878B8725DDCB3B92759 /* Pods-DigitalPayments.PaymentForm.Sample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DigitalPayments.PaymentForm.Sample-acknowledgements.plist"; sourceTree = "<group>"; };
+		12F6350E90519D64C73595602B762451 /* Pods-DigitalPayments.PaymentForm.Sample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DigitalPayments.PaymentForm.Sample.modulemap"; sourceTree = "<group>"; };
+		1B9DDEB3613C906EEFB48268AF8C42F1 /* Pods_DigitalPayments_PaymentForm_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DigitalPayments_PaymentForm_Sample.framework; path = "Pods-DigitalPayments.PaymentForm.Sample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41F13E795AB0209A24D505283B17A121 /* Pods-DigitalPayments.PaymentForm.Sample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DigitalPayments.PaymentForm.Sample-umbrella.h"; sourceTree = "<group>"; };
+		60F0593D0994C5ECA79DF7ABB99BBFCF /* DigitalPayments.PaymentForm.SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DigitalPayments.PaymentForm.SDK.release.xcconfig; sourceTree = "<group>"; };
+		6EC2B63AF253441A11CBBAAA5F51A4AA /* Pods-DigitalPayments.PaymentForm.Sample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DigitalPayments.PaymentForm.Sample-frameworks.sh"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7CB7C592B3113BE446C6BB798F042F62 /* Pods-DigitalPayments.PaymentForm.Sample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DigitalPayments.PaymentForm.Sample-dummy.m"; sourceTree = "<group>"; };
+		8043BEE9295516DEE8735E48A992684E /* Pods-DigitalPayments.PaymentForm.Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DigitalPayments.PaymentForm.Sample.release.xcconfig"; sourceTree = "<group>"; };
+		91DC91AE5F424980F3798C4D88E09BB0 /* Pods-DigitalPayments.PaymentForm.Sample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DigitalPayments.PaymentForm.Sample-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A3BCB5A7818E3E076ECB7FC65637B81F /* Pods_DigitalPayments_PaymentForm_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DigitalPayments_PaymentForm_Sample.framework; path = "Pods-DigitalPayments.PaymentForm.Sample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8089B2DF11D7965F9EAD34E0ABADA09 /* Pods-DigitalPayments.PaymentForm.Sample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DigitalPayments.PaymentForm.Sample-dummy.m"; sourceTree = "<group>"; };
-		C840DB7129E43BD99C71F48E95283561 /* Pods-DigitalPayments.PaymentForm.Sample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DigitalPayments.PaymentForm.Sample-frameworks.sh"; sourceTree = "<group>"; };
-		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CF3FF9CF97A5A2616377F87305D3B33D /* Pods-DigitalPayments.PaymentForm.Sample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DigitalPayments.PaymentForm.Sample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E4633A9ED63DD99A3E925CA0F1777B02 /* DigitalPayments.PaymentForm.SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DigitalPayments.PaymentForm.SDK.xcconfig; sourceTree = "<group>"; };
+		9DFB59E65DC1C08D8D059A1CB75D5F00 /* Pods-DigitalPayments.PaymentForm.Sample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DigitalPayments.PaymentForm.Sample-Info.plist"; sourceTree = "<group>"; };
+		A4EC7ADBF78B92581B2AAC4350DC354F /* Pods-DigitalPayments.PaymentForm.Sample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DigitalPayments.PaymentForm.Sample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B85E6BDE891539E7679A0A2BBD534560 /* DigitalPayments.PaymentForm.SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DigitalPayments.PaymentForm.SDK.debug.xcconfig; sourceTree = "<group>"; };
+		DDD71310A68789D1A6514DBFEEA1694B /* Pods-DigitalPayments.PaymentForm.Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DigitalPayments.PaymentForm.Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		FD5D589959F377546B37BEC52893C001 /* DigitalPayments_PaymentForm_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitalPayments_PaymentForm_SDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		09235C6409C6A02406BA73F05F413F67 /* Frameworks */ = {
+		75471BA4B5A128A02296F94D74CD8D46 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49740BEC6B821160343271818D788D26 /* Foundation.framework in Frameworks */,
+				07FBD47FBD2C13334F460BCCFF90E5E2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F0361BD1FB5B21EC71C76E32F46201C /* Pods-DigitalPayments.PaymentForm.Sample */ = {
+		2063F68749E2690EABE1F23074C9AB45 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8CF10F49EE554F67D9F0C5063BA12028 /* Pods-DigitalPayments.PaymentForm.Sample.modulemap */,
-				CF3FF9CF97A5A2616377F87305D3B33D /* Pods-DigitalPayments.PaymentForm.Sample-acknowledgements.markdown */,
-				978BCC29244F9878B8725DDCB3B92759 /* Pods-DigitalPayments.PaymentForm.Sample-acknowledgements.plist */,
-				C8089B2DF11D7965F9EAD34E0ABADA09 /* Pods-DigitalPayments.PaymentForm.Sample-dummy.m */,
-				C840DB7129E43BD99C71F48E95283561 /* Pods-DigitalPayments.PaymentForm.Sample-frameworks.sh */,
-				54E864B01444188686515CA170E5C57B /* Pods-DigitalPayments.PaymentForm.Sample-Info.plist */,
-				50C9EF3EBC951A8971502B456E0029C6 /* Pods-DigitalPayments.PaymentForm.Sample-umbrella.h */,
-				7C6631E1EC086F98EC66E1EC607A8635 /* Pods-DigitalPayments.PaymentForm.Sample.debug.xcconfig */,
-				42D90DC0790D37EE443F42520F53ED9C /* Pods-DigitalPayments.PaymentForm.Sample.release.xcconfig */,
+				B85E6BDE891539E7679A0A2BBD534560 /* DigitalPayments.PaymentForm.SDK.debug.xcconfig */,
+				60F0593D0994C5ECA79DF7ABB99BBFCF /* DigitalPayments.PaymentForm.SDK.release.xcconfig */,
 			);
-			name = "Pods-DigitalPayments.PaymentForm.Sample";
-			path = "Target Support Files/Pods-DigitalPayments.PaymentForm.Sample";
+			name = "Support Files";
+			path = "../Target Support Files/DigitalPayments.PaymentForm.SDK";
 			sourceTree = "<group>";
 		};
-		2172F2B54AD73B731782066D6879277B /* Frameworks */ = {
+		2F68C3CE3F015739A96E07346532BF62 /* DigitalPayments.PaymentForm.SDK */ = {
 			isa = PBXGroup;
 			children = (
-				8FBD6EE9D5B43B761E41699A4AAB8656 /* DigitalPayments_PaymentForm_SDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		30E07F137DBFF3EFB5592A5556B1ED81 /* DigitalPayments.PaymentForm.SDK */ = {
-			isa = PBXGroup;
-			children = (
-				2172F2B54AD73B731782066D6879277B /* Frameworks */,
-				FF67284E5FB58C7BA92EF27B5F6DAE93 /* Support Files */,
+				41A8766233C1123C4B202B0E45C1A922 /* Frameworks */,
+				2063F68749E2690EABE1F23074C9AB45 /* Support Files */,
 			);
 			name = DigitalPayments.PaymentForm.SDK;
 			path = DigitalPayments.PaymentForm.SDK;
 			sourceTree = "<group>";
 		};
+		41A8766233C1123C4B202B0E45C1A922 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD5D589959F377546B37BEC52893C001 /* DigitalPayments_PaymentForm_SDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CD0E92DE0F7EA9268F595F5E2B7864A /* Pods-DigitalPayments.PaymentForm.Sample */ = {
+			isa = PBXGroup;
+			children = (
+				12F6350E90519D64C73595602B762451 /* Pods-DigitalPayments.PaymentForm.Sample.modulemap */,
+				A4EC7ADBF78B92581B2AAC4350DC354F /* Pods-DigitalPayments.PaymentForm.Sample-acknowledgements.markdown */,
+				91DC91AE5F424980F3798C4D88E09BB0 /* Pods-DigitalPayments.PaymentForm.Sample-acknowledgements.plist */,
+				7CB7C592B3113BE446C6BB798F042F62 /* Pods-DigitalPayments.PaymentForm.Sample-dummy.m */,
+				6EC2B63AF253441A11CBBAAA5F51A4AA /* Pods-DigitalPayments.PaymentForm.Sample-frameworks.sh */,
+				9DFB59E65DC1C08D8D059A1CB75D5F00 /* Pods-DigitalPayments.PaymentForm.Sample-Info.plist */,
+				41F13E795AB0209A24D505283B17A121 /* Pods-DigitalPayments.PaymentForm.Sample-umbrella.h */,
+				DDD71310A68789D1A6514DBFEEA1694B /* Pods-DigitalPayments.PaymentForm.Sample.debug.xcconfig */,
+				8043BEE9295516DEE8735E48A992684E /* Pods-DigitalPayments.PaymentForm.Sample.release.xcconfig */,
+			);
+			name = "Pods-DigitalPayments.PaymentForm.Sample";
+			path = "Target Support Files/Pods-DigitalPayments.PaymentForm.Sample";
+			sourceTree = "<group>";
+		};
 		55E4F4F855F3270CFA6737B79D5974F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A3BCB5A7818E3E076ECB7FC65637B81F /* Pods_DigitalPayments_PaymentForm_Sample.framework */,
+				1B9DDEB3613C906EEFB48268AF8C42F1 /* Pods_DigitalPayments_PaymentForm_Sample.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		9A6922821783439AF20A0AB9030CC7B5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				30E07F137DBFF3EFB5592A5556B1ED81 /* DigitalPayments.PaymentForm.SDK */,
+				2F68C3CE3F015739A96E07346532BF62 /* DigitalPayments.PaymentForm.SDK */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		BE80915113BF24F74E9E03CC5A4C9E10 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0F0361BD1FB5B21EC71C76E32F46201C /* Pods-DigitalPayments.PaymentForm.Sample */,
+				4CD0E92DE0F7EA9268F595F5E2B7864A /* Pods-DigitalPayments.PaymentForm.Sample */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -144,51 +155,42 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FF67284E5FB58C7BA92EF27B5F6DAE93 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E4633A9ED63DD99A3E925CA0F1777B02 /* DigitalPayments.PaymentForm.SDK.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DigitalPayments.PaymentForm.SDK";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		83CB75FBB999E544FD1B386E9AD92EF5 /* Headers */ = {
+		6C247FA8B35B7A5BCCA911BE706FEF5C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97EA7A2609B708091D5BD31B30E0317F /* Pods-DigitalPayments.PaymentForm.Sample-umbrella.h in Headers */,
+				988911942FA6E5EC7B51D98E3BCD1497 /* Pods-DigitalPayments.PaymentForm.Sample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		45A12A391A488DA0FA85ACF2123D5B66 /* Pods-DigitalPayments.PaymentForm.Sample */ = {
+		E3C1E97A20378C5B8A00F4CFA5FBF138 /* Pods-DigitalPayments.PaymentForm.Sample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A6DB6D9694F5E3DF5DC2692B9B970CF /* Build configuration list for PBXNativeTarget "Pods-DigitalPayments.PaymentForm.Sample" */;
+			buildConfigurationList = C3C7B2D4A790F7D80A292C11C2A82A11 /* Build configuration list for PBXNativeTarget "Pods-DigitalPayments.PaymentForm.Sample" */;
 			buildPhases = (
-				83CB75FBB999E544FD1B386E9AD92EF5 /* Headers */,
-				294F0758B240B3E6343A17004C6A350B /* Sources */,
-				09235C6409C6A02406BA73F05F413F67 /* Frameworks */,
-				B0764D13369DB710821FEFF29EDFBA41 /* Resources */,
+				6C247FA8B35B7A5BCCA911BE706FEF5C /* Headers */,
+				058251A1293AB704FE46AAEFE2011736 /* Sources */,
+				75471BA4B5A128A02296F94D74CD8D46 /* Frameworks */,
+				D02CFD5EC43338280B0517EF7FE55435 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FFDA614F56A34EDA849F0DC6D7E92C0B /* PBXTargetDependency */,
+				1446AAE435211485F0BAB26082DD8736 /* PBXTargetDependency */,
 			);
 			name = "Pods-DigitalPayments.PaymentForm.Sample";
 			productName = "Pods-DigitalPayments.PaymentForm.Sample";
-			productReference = A3BCB5A7818E3E076ECB7FC65637B81F /* Pods_DigitalPayments_PaymentForm_Sample.framework */;
+			productReference = 1B9DDEB3613C906EEFB48268AF8C42F1 /* Pods_DigitalPayments_PaymentForm_Sample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -197,29 +199,30 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = English;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 55E4F4F855F3270CFA6737B79D5974F0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE7439095D159D91D951BB378D0C4C2A /* DigitalPayments.PaymentForm.SDK */,
-				45A12A391A488DA0FA85ACF2123D5B66 /* Pods-DigitalPayments.PaymentForm.Sample */,
+				EBF720841053E79D52AA9E8D86F13B60 /* DigitalPayments.PaymentForm.SDK */,
+				E3C1E97A20378C5B8A00F4CFA5FBF138 /* Pods-DigitalPayments.PaymentForm.Sample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B0764D13369DB710821FEFF29EDFBA41 /* Resources */ = {
+		D02CFD5EC43338280B0517EF7FE55435 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -229,30 +232,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		294F0758B240B3E6343A17004C6A350B /* Sources */ = {
+		058251A1293AB704FE46AAEFE2011736 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CD0DA9256E96CF6188F67FCB5D88CD8 /* Pods-DigitalPayments.PaymentForm.Sample-dummy.m in Sources */,
+				4745DA9FAFD889E49B3956A713090E1F /* Pods-DigitalPayments.PaymentForm.Sample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FFDA614F56A34EDA849F0DC6D7E92C0B /* PBXTargetDependency */ = {
+		1446AAE435211485F0BAB26082DD8736 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DigitalPayments.PaymentForm.SDK;
-			target = CE7439095D159D91D951BB378D0C4C2A /* DigitalPayments.PaymentForm.SDK */;
-			targetProxy = AEDCFF009F624FB93ECAC06385578AB3 /* PBXContainerItemProxy */;
+			target = EBF720841053E79D52AA9E8D86F13B60 /* DigitalPayments.PaymentForm.SDK */;
+			targetProxy = 486D13507D03012C97AC943E33CEA067 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07488D4657FB0A78086563621D425F8A /* Debug */ = {
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -275,6 +279,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -285,6 +290,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -308,34 +314,16 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		3D6EFE20F34175F2AFA95371A2C24124 /* Release */ = {
+		5728DA6C4165817345896B7527451E3E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4633A9ED63DD99A3E925CA0F1777B02 /* DigitalPayments.PaymentForm.SDK.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		5C7DDD368E8297977CEA28E519AB8C5B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42D90DC0790D37EE443F42520F53ED9C /* Pods-DigitalPayments.PaymentForm.Sample.release.xcconfig */;
+			baseConfigurationReference = 8043BEE9295516DEE8735E48A992684E /* Pods-DigitalPayments.PaymentForm.Sample.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -368,12 +356,11 @@
 			};
 			name = Release;
 		};
-		9BCADA5432F8E2284A01B3932551CBEF /* Debug */ = {
+		577D76E0C6833293819E501C27EE772B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C6631E1EC086F98EC66E1EC607A8635 /* Pods-DigitalPayments.PaymentForm.Sample.debug.xcconfig */;
+			baseConfigurationReference = DDD71310A68789D1A6514DBFEEA1694B /* Pods-DigitalPayments.PaymentForm.Sample.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -405,10 +392,27 @@
 			};
 			name = Debug;
 		};
-		A1962E6FF39BBAC201A2E5DDF99557DF /* Release */ = {
+		B1A4D2EBECEDD460AAA053903827E87F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B85E6BDE891539E7679A0A2BBD534560 /* DigitalPayments.PaymentForm.SDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -431,6 +435,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -441,6 +446,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -460,17 +466,17 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		E2EBE623436CEED587621333C9C0077F /* Debug */ = {
+		FCC11C510588150170770E109B1E60CC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4633A9ED63DD99A3E925CA0F1777B02 /* DigitalPayments.PaymentForm.SDK.xcconfig */;
+			baseConfigurationReference = 60F0593D0994C5ECA79DF7ABB99BBFCF /* DigitalPayments.PaymentForm.SDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -478,26 +484,18 @@
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2A6DB6D9694F5E3DF5DC2692B9B970CF /* Build configuration list for PBXNativeTarget "Pods-DigitalPayments.PaymentForm.Sample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9BCADA5432F8E2284A01B3932551CBEF /* Debug */,
-				5C7DDD368E8297977CEA28E519AB8C5B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07488D4657FB0A78086563621D425F8A /* Debug */,
-				A1962E6FF39BBAC201A2E5DDF99557DF /* Release */,
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -505,8 +503,17 @@
 		A005C533BF7250ABFB2CB883C0550201 /* Build configuration list for PBXAggregateTarget "DigitalPayments.PaymentForm.SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E2EBE623436CEED587621333C9C0077F /* Debug */,
-				3D6EFE20F34175F2AFA95371A2C24124 /* Release */,
+				B1A4D2EBECEDD460AAA053903827E87F /* Debug */,
+				FCC11C510588150170770E109B1E60CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3C7B2D4A790F7D80A292C11C2A82A11 /* Build configuration list for PBXNativeTarget "Pods-DigitalPayments.PaymentForm.Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				577D76E0C6833293819E501C27EE772B /* Debug */,
+				5728DA6C4165817345896B7527451E3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,6 +1,6 @@
 {
   "name": "DigitalPayments.PaymentForm.SDK",
-  "version": "2.0.0",
+  "version": "2.0.6",
   "summary": "The One Inc's PortalOne iOS SDK",
   "description": "This SDK are integrates into an existing iOS application and invoke the make payment and/or save payment method. When these methods are invoked, a modal will open which will allow a user to make a payment or save a payment method based upon the provided parameters.",
   "homepage": "https://testportalone.processonepayments.com/help/documentation/ios-sdk",
@@ -10,8 +10,15 @@
   },
   "source": {
     "git": "https://github.com/oneincgithub/DigitalPayments.SDK-for-iOS.git",
-    "tag": "2.0.0"
+    "tag": "2.0.5"
   },
   "vendored_frameworks": "DigitalPayments_PaymentForm_SDK.framework",
-  "swift_version": "4.2"
+  "swift_versions": "5.0",
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "swift_version": "5.0"
 }

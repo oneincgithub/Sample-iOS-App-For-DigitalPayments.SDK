@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		05D9D1E34628B6AC62E3104D /* Pods_DigitalPayments_PaymentForm_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960B3BFB2B87E930B47CC125 /* Pods_DigitalPayments_PaymentForm_Sample.framework */; };
+		7001AAB5266769CB003DAA71 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7001AAB4266769CB003DAA71 /* ConfigurationService.swift */; };
+		7001AAB7266769E7003DAA71 /* ConfigurationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7001AAB6266769E7003DAA71 /* ConfigurationResponse.swift */; };
 		70B0643321AD3FF4006A4BA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B0643221AD3FF4006A4BA1 /* AppDelegate.swift */; };
 		70B0643521AD3FF4006A4BA1 /* MainTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B0643421AD3FF4006A4BA1 /* MainTestController.swift */; };
 		70B0643821AD3FF5006A4BA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70B0643621AD3FF5006A4BA1 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		3ACC7BFECAEB5CB29AE71DF6 /* Pods-DigitalPayments.PaymentForm.Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalPayments.PaymentForm.Sample.release.xcconfig"; path = "Target Support Files/Pods-DigitalPayments.PaymentForm.Sample/Pods-DigitalPayments.PaymentForm.Sample.release.xcconfig"; sourceTree = "<group>"; };
+		7001AAB4266769CB003DAA71 /* ConfigurationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationService.swift; sourceTree = "<group>"; };
+		7001AAB6266769E7003DAA71 /* ConfigurationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationResponse.swift; sourceTree = "<group>"; };
 		70B0642F21AD3FF4006A4BA1 /* DigitalPayments.PaymentForm.Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalPayments.PaymentForm.Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B0643221AD3FF4006A4BA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70B0643421AD3FF4006A4BA1 /* MainTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTestController.swift; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 			children = (
 				70E6F01E21B5303B009D1E61 /* SessionService.swift */,
 				70E6F02021B53149009D1E61 /* SessionCreateResponse.swift */,
+				7001AAB4266769CB003DAA71 /* ConfigurationService.swift */,
+				7001AAB6266769E7003DAA71 /* ConfigurationResponse.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -224,16 +230,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DigitalPayments.PaymentForm.Sample/Pods-DigitalPayments.PaymentForm.Sample-frameworks.sh",
-				"${PODS_ROOT}/DigitalPayments.PaymentForm.SDK/DigitalPayments_PaymentForm_SDK.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-DigitalPayments.PaymentForm.Sample/Pods-DigitalPayments.PaymentForm.Sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DigitalPayments_PaymentForm_SDK.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-DigitalPayments.PaymentForm.Sample/Pods-DigitalPayments.PaymentForm.Sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -247,7 +248,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7001AAB5266769CB003DAA71 /* ConfigurationService.swift in Sources */,
 				70F00C6C21B678A2009827C7 /* BaseTestController.swift in Sources */,
+				7001AAB7266769E7003DAA71 /* ConfigurationResponse.swift in Sources */,
 				70F00C6A21B6526E009827C7 /* SettingController.swift in Sources */,
 				70F00C6E21B68800009827C7 /* ViewControllerExtension.swift in Sources */,
 				70B0643521AD3FF4006A4BA1 /* MainTestController.swift in Sources */,
@@ -396,7 +399,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7UN29N684Y;
 				INFOPLIST_FILE = DigitalPayments.PaymentForm.Sample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -417,7 +420,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7UN29N684Y;
 				INFOPLIST_FILE = DigitalPayments.PaymentForm.Sample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

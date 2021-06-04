@@ -8,14 +8,19 @@ class SettingController : UIViewController{
     @IBOutlet weak var portaloneApiSessionUrl: UITextField!
     @IBOutlet weak var portaloneApiUrl: UITextField!
     
-    @IBOutlet weak var baseHost: UITextField!
+    @IBOutlet weak var getConfigurationUrl: UITextField!
     @IBAction func onHostApplyButtonClick(_ sender: Any) {
-        let baseUrl = URL(string: baseHost.text!)
+        let baseUrl = getConfigurationUrl.text!
         
-        genericModalSessionUrl.text = baseUrl?.appendingPathComponent(URL(string: genericModalSessionUrl.text!)!.path).absoluteString
-        genericModalUrl.text = baseUrl?.appendingPathComponent(URL(string: genericModalUrl.text!)!.path).absoluteString
-        portaloneApiSessionUrl.text = baseUrl?.appendingPathComponent(URL(string: portaloneApiSessionUrl.text!)!.path).absoluteString
-        portaloneApiUrl.text = baseUrl?.appendingPathComponent(URL(string: portaloneApiUrl.text!)!.path).absoluteString
+        let configurationService = ConfigurationService(url: baseUrl)
+        configurationService.getConfiguration() {(result: ConfigurationResponse) -> Void in
+            DispatchQueue.main.async {
+                self.genericModalSessionUrl.text = baseUrl + result.webViewRelativeSessionUrl!
+                self.genericModalUrl.text = result.webViewAppUrl!
+                self.portaloneApiSessionUrl.text = baseUrl + result.nativeViewRelativeSessionUrl!
+                self.portaloneApiUrl.text = result.nativeViewAppUrl!
+            }
+        }
     }
     
     override func viewDidLoad() {
@@ -24,15 +29,13 @@ class SettingController : UIViewController{
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWasShown(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWasHidden(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
 
-        baseHost.text = UserDefaults.standard.string(forKey: "baseHost")
-        
+        getConfigurationUrl.text = UserDefaults.standard.string(forKey: "getConfigurationUrl")
         genericModalSessionUrl.text = UserDefaults.standard.string(forKey: "genericModalSessionUrl")
         genericModalUrl.text = UserDefaults.standard.string(forKey: "genericModalUrl")
         portaloneApiSessionUrl.text = UserDefaults.standard.string(forKey: "portaloneApiSessionUrl")
         portaloneApiUrl.text = UserDefaults.standard.string(forKey: "portaloneApiUrl")
         
-        addToolBar(textField: baseHost)
-        
+        addToolBar(textField: getConfigurationUrl)        
         addToolBar(textField: genericModalSessionUrl)
         addToolBar(textField: genericModalUrl)
         addToolBar(textField: portaloneApiSessionUrl)
@@ -40,7 +43,7 @@ class SettingController : UIViewController{
     }
     
     @IBAction func onSaveButtonClick(_ sender: UIButton) {
-        UserDefaults.standard.set(baseHost.text, forKey: "baseHost")
+        UserDefaults.standard.set(getConfigurationUrl.text, forKey: "getConfigurationUrl")
         
         UserDefaults.standard.set(genericModalSessionUrl.text, forKey: "genericModalSessionUrl")
         UserDefaults.standard.set(genericModalUrl.text, forKey: "genericModalUrl")
@@ -50,8 +53,7 @@ class SettingController : UIViewController{
     }
     
     @IBAction func onResetButtonClick(_ sender: Any) {
-        UserDefaults.standard.set(nil, forKey: "baseHost")
-        
+        UserDefaults.standard.set(nil, forKey: "getConfigurationUrl")
         UserDefaults.standard.set(nil, forKey: "genericModalSessionUrl")
         UserDefaults.standard.set(nil, forKey: "genericModalUrl")
         UserDefaults.standard.set(nil, forKey: "portaloneApiSessionUrl")
